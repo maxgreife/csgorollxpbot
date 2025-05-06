@@ -2,6 +2,9 @@ import os
 import logging
 from bot import setup_and_run_bot
 from keep_alive import keep_alive  # NEU
+from typing import Union
+
+def format_number(n: Union[float, int]) -> str:
 
 logging.basicConfig(
     level=logging.INFO,
